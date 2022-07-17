@@ -1,4 +1,6 @@
-# bank-customer-segmentation
-Basic Exploratory Data analysis is performed on RStudio.
+# customer segmentation on data of Union Bank of Bolivia. 
+RStudio is used to perform basic exploratory data analysis.
 Different methods to determine number of k or clusters for kmeans clustering is also performed in R Studio.
-Machine learning Model i.e., kmeans clustering is run in the jupyter notebook.
+Then the data is loaded to jupyter notebook cleaned and transformed.
+Basic is also performed here.
+Then we build and run the model to perform customer segmentation with the information which we got from tasks performed in R studios.
