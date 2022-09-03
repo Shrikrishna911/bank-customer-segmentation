@@ -1,5 +1,5 @@
 # Customer segmentation on data of Union Bank of Bolivia. 
-RStudio is used to perform basic exploratory data analysis.
+R Studio is used to perform basic exploratory data analysis.
 Method to find optimum number of clusters for kmeans clustering is also performed in R Studio as well as a customer segmentatio chart is plotted.
 Then the data is loaded to jupyter notebook cleaned and transformed.
 Basic EDA is also performed here.
