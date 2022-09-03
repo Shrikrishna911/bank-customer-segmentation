@@ -52,9 +52,9 @@ plot(1:k.max, wss,type="b", pch = 19, frame = FALSE,
      xlab="Number of clusters K",
      ylab="Total within-clusters sum of squares")
 
-#k=5 as optimal cluster
-k5<-kmeans(customer_data[,10:11],5,iter.max=100,nstart=50,algorithm="Lloyd")
-k5
+#k=4 as optimal cluster
+k4<-kmeans(customer_data[,10:11],4,iter.max=100,nstart=50,algorithm="Lloyd")
+k4
 
 #to visualize the optimal number of clusters
 library(NbClust)
@@ -67,9 +67,9 @@ pcclust$rotation[,1:2]
 
 set.seed(1)
 ggplot(bank_data, aes(x =Annual_Salary, y = CreditScore)) + 
-  geom_point(stat = "identity", aes(color = as.factor(k5$cluster))) +
+  geom_point(stat = "identity", aes(color = as.factor(k4$cluster))) +
   scale_color_discrete(name=" ",
-                       breaks=c("1", "2", "3", "4", "5"),
-                       labels=c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4", "Cluster 5")) +
+                       breaks=c("1", "2", "3", "4"),
+                       labels=c("Cluster 1", "Cluster 2", "Cluster 3", "Cluster 4")) +
   ggtitle("Segments of Bank Customers", subtitle = "Using K-means Clustering")
 
